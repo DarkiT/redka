@@ -1,8 +1,8 @@
 package set
 
 import (
-	"github.com/nalgeon/redka/internal/parser"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/parser"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Stores the difference of multiple sets in a key.

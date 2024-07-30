@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nalgeon/redka/internal/redis"
-	"github.com/nalgeon/redka/internal/testx"
+	"github.com/darkit/redka/internal/redis"
+	"github.com/darkit/redka/internal/testx"
 )
 
 func TestSetEXParse(t *testing.T) {

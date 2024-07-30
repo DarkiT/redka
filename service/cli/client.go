@@ -1,5 +1,5 @@
 // Redka CLI. Executes commands from a file.
-package main
+package client
 
 import (
 	"bytes"
@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/darkit/redka"
+	"github.com/darkit/redka/internal/command"
+	"github.com/darkit/redka/internal/redis"
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/nalgeon/redka"
-	"github.com/nalgeon/redka/internal/command"
-	"github.com/nalgeon/redka/internal/redis"
 )
 
 const dbURI = "file:/data.db?vfs=memdb"

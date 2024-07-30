@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nalgeon/redka"
-	"github.com/nalgeon/redka/internal/testx"
+	"github.com/darkit/redka"
+	"github.com/darkit/redka/internal/testx"
 )
 
 func ExampleOpen() {

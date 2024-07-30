@@ -1,8 +1,8 @@
 package string
 
 import (
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Get returns the string value of a key.

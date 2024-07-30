@@ -1,8 +1,8 @@
 package key
 
 import (
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Determines the type of value stored at a key.

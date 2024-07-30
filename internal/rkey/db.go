@@ -6,8 +6,8 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/sqlx"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/sqlx"
 )
 
 // DB is a database-backed key repository.

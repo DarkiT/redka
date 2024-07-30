@@ -117,7 +117,7 @@ func (d *DB[T]) applySettings(pragma map[string]string) error {
 	// one connection), but it is for d.RO (which has multiple connections).
 	// Still, it's better than nothing.
 	//
-	// See https://github.com/nalgeon/redka/issues/28 for more details.
+	// See https://github.com/darkit/redka/issues/28 for more details.
 	if len(pragma) == 0 {
 		return nil
 	}

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nalgeon/redka/internal/core"
+	"github.com/darkit/redka/internal/core"
 )
 
 // Redis-like errors.

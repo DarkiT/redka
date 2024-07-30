@@ -3,13 +3,13 @@ package redis
 import (
 	"time"
 
-	"github.com/nalgeon/redka"
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/rhash"
-	"github.com/nalgeon/redka/internal/rkey"
-	"github.com/nalgeon/redka/internal/rset"
-	"github.com/nalgeon/redka/internal/rstring"
-	"github.com/nalgeon/redka/internal/rzset"
+	"github.com/darkit/redka"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/rhash"
+	"github.com/darkit/redka/internal/rkey"
+	"github.com/darkit/redka/internal/rset"
+	"github.com/darkit/redka/internal/rstring"
+	"github.com/darkit/redka/internal/rzset"
 )
 
 // RHash is a hash repository.

@@ -3,9 +3,9 @@ package set
 import (
 	"testing"
 
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/redis"
-	"github.com/nalgeon/redka/internal/testx"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/redis"
+	"github.com/darkit/redka/internal/testx"
 )
 
 func TestSUnionStoreParse(t *testing.T) {

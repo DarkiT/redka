@@ -1,9 +1,9 @@
 package set
 
 import (
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/parser"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/parser"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Moves a member from one set to another.

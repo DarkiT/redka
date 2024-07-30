@@ -1,8 +1,8 @@
 package zset
 
 import (
-	"github.com/nalgeon/redka/internal/parser"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/parser"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Increments the score of a member in a sorted set.

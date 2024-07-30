@@ -1,8 +1,8 @@
 package string
 
 import (
-	"github.com/nalgeon/redka/internal/parser"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/parser"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Atomically creates or modifies the string values of one or more keys.

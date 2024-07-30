@@ -3,7 +3,7 @@ package parser
 import (
 	"testing"
 
-	"github.com/nalgeon/redka/internal/testx"
+	"github.com/darkit/redka/internal/testx"
 )
 
 func TestFlag(t *testing.T) {

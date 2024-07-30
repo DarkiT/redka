@@ -5,9 +5,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/nalgeon/redka"
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/redis"
 )
 
 func getDB(tb testing.TB) (*redka.DB, redis.Redka) {

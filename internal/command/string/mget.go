@@ -1,8 +1,8 @@
 package string
 
 import (
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Atomically returns the string values of one or more keys.

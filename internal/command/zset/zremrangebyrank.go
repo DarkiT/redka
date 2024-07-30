@@ -1,8 +1,8 @@
 package zset
 
 import (
-	"github.com/nalgeon/redka/internal/parser"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/parser"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Removes members in a sorted set within a range of indexes.

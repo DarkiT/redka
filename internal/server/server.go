@@ -2,10 +2,10 @@
 package server
 
 import (
-	"log/slog"
 	"sync"
 
-	"github.com/nalgeon/redka"
+	"github.com/darkit/redka"
+	"github.com/darkit/slog"
 	"github.com/tidwall/redcon"
 )
 

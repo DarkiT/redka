@@ -11,18 +11,17 @@ package redka
 import (
 	"context"
 	"database/sql"
-	"io"
-	"log/slog"
 	"time"
 
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/rhash"
-	"github.com/nalgeon/redka/internal/rkey"
-	"github.com/nalgeon/redka/internal/rlist"
-	"github.com/nalgeon/redka/internal/rset"
-	"github.com/nalgeon/redka/internal/rstring"
-	"github.com/nalgeon/redka/internal/rzset"
-	"github.com/nalgeon/redka/internal/sqlx"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/rhash"
+	"github.com/darkit/redka/internal/rkey"
+	"github.com/darkit/redka/internal/rlist"
+	"github.com/darkit/redka/internal/rset"
+	"github.com/darkit/redka/internal/rstring"
+	"github.com/darkit/redka/internal/rzset"
+	"github.com/darkit/redka/internal/sqlx"
+	"github.com/darkit/slog"
 )
 
 // Common errors returned by data structure methods.
@@ -66,7 +65,7 @@ type Options struct {
 var defaultOptions = Options{
 	DriverName: "sqlite3",
 	Pragma:     sqlx.DefaultPragma,
-	Logger:     slog.New(slog.NewTextHandler(io.Discard, nil)),
+	Logger:     slog.Default(),
 }
 
 // DB is a Redis-like database backed by SQLite.
@@ -227,7 +226,7 @@ func (db *DB) ZSet() *rzset.DB {
 // Update executes a function within a writable transaction.
 // See the [tx] example for details.
 //
-// [tx]: https://github.com/nalgeon/redka/blob/main/example/tx/main.go
+// [tx]: https://github.com/darkit/redka/blob/main/example/tx/main.go
 func (db *DB) Update(f func(tx *Tx) error) error {
 	return db.DB.Update(f)
 }
@@ -235,7 +234,7 @@ func (db *DB) Update(f func(tx *Tx) error) error {
 // UpdateContext executes a function within a writable transaction.
 // See the [tx] example for details.
 //
-// [tx]: https://github.com/nalgeon/redka/blob/main/example/tx/main.go
+// [tx]: https://github.com/darkit/redka/blob/main/example/tx/main.go
 func (db *DB) UpdateContext(ctx context.Context, f func(tx *Tx) error) error {
 	return db.DB.UpdateContext(ctx, f)
 }
@@ -243,7 +242,7 @@ func (db *DB) UpdateContext(ctx context.Context, f func(tx *Tx) error) error {
 // View executes a function within a read-only transaction.
 // See the [tx] example for details.
 //
-// [tx]: https://github.com/nalgeon/redka/blob/main/example/tx/main.go
+// [tx]: https://github.com/darkit/redka/blob/main/example/tx/main.go
 func (db *DB) View(f func(tx *Tx) error) error {
 	return db.DB.View(f)
 }
@@ -251,7 +250,7 @@ func (db *DB) View(f func(tx *Tx) error) error {
 // ViewContext executes a function within a read-only transaction.
 // See the [tx] example for details.
 //
-// [tx]: https://github.com/nalgeon/redka/blob/main/example/tx/main.go
+// [tx]: https://github.com/darkit/redka/blob/main/example/tx/main.go
 func (db *DB) ViewContext(ctx context.Context, f func(tx *Tx) error) error {
 	return db.DB.ViewContext(ctx, f)
 }
@@ -306,7 +305,7 @@ func (db *DB) startBgManager() *time.Ticker {
 //
 // See the [tx] example for details.
 //
-// [tx]: https://github.com/nalgeon/redka/blob/main/example/tx/main.go
+// [tx]: https://github.com/darkit/redka/blob/main/example/tx/main.go
 type Tx struct {
 	tx     sqlx.Tx
 	hashTx *rhash.Tx

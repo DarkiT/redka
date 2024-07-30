@@ -6,7 +6,7 @@ import (
 	"database/sql"
 	"strings"
 
-	"github.com/nalgeon/redka/internal/core"
+	"github.com/darkit/redka/internal/core"
 )
 
 // Sorting direction.

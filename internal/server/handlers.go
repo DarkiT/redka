@@ -1,12 +1,12 @@
 package server
 
 import (
-	"log/slog"
 	"time"
 
-	"github.com/nalgeon/redka"
-	"github.com/nalgeon/redka/internal/command"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka"
+	"github.com/darkit/redka/internal/command"
+	"github.com/darkit/redka/internal/redis"
+	"github.com/darkit/slog"
 	"github.com/tidwall/redcon"
 )
 

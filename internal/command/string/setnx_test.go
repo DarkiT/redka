@@ -3,8 +3,8 @@ package string
 import (
 	"testing"
 
-	"github.com/nalgeon/redka/internal/redis"
-	"github.com/nalgeon/redka/internal/testx"
+	"github.com/darkit/redka/internal/redis"
+	"github.com/darkit/redka/internal/testx"
 )
 
 func TestSetNXParse(t *testing.T) {

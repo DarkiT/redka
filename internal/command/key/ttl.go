@@ -3,8 +3,8 @@ package key
 import (
 	"time"
 
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Returns the expiration time in seconds of a key.

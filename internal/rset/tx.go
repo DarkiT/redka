@@ -5,8 +5,8 @@ import (
 	"slices"
 	"time"
 
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/sqlx"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/sqlx"
 )
 
 const (

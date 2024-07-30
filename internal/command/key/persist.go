@@ -1,8 +1,8 @@
 package key
 
 import (
-	"github.com/nalgeon/redka/internal/core"
-	"github.com/nalgeon/redka/internal/redis"
+	"github.com/darkit/redka/internal/core"
+	"github.com/darkit/redka/internal/redis"
 )
 
 // Removes the expiration time of a key.
